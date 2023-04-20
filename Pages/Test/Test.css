@@ -1,0 +1,60 @@
+/* Test page Stuff */
+#TestPage {
+  position: absolute;
+  display: grid;
+  height: 100%;
+  width: 100%;
+  background: var(--Background);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+
+}
+.grid-item {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background: var(--Background2);
+  border: 1px solid var(--Border);
+  min-height: 2px; 
+  min-width: 2px; 
+}
+/* Upper 3 Squares */
+#UpperLeft {
+  grid-column: 1;
+  grid-row: 1;
+}
+#UpperMid {
+  grid-column: 2;
+  grid-row: 1;
+}
+#UpperRight {
+  grid-column: 3;
+  grid-row: 1;
+}
+/* Mid 3 Squares */
+#MidLeft {
+  grid-column: 1;
+  grid-row: 2;
+}
+#MidMid {
+  grid-column: 2;
+  grid-row: 2;
+}
+#MidRight {
+  grid-column: 3;
+  grid-row: 2;
+}
+/* Bottom 3 Squares */
+#BottomLeft {
+  grid-column: 1;
+  grid-row: 3;
+}
+#BottomMid {
+  grid-column: 2;
+  grid-row: 3;
+}
+#BottomRight {
+  grid-column: 3;
+  grid-row: 3;
+}
+

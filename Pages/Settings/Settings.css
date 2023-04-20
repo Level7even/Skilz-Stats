@@ -1,0 +1,268 @@
+/* Settings page Stuff */
+.settings-Button {
+  position: absolute;
+  top: 84%;
+  left: 84%;
+  align-items: center;
+  font-size: 10px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin-bottom: 2px;
+  cursor: pointer;
+  border: 2px solid var(--Border);
+  background-color: var(--Background);
+  color: var(--White);
+  border-radius: 30%;
+  text-align: center;
+  line-height: 2;
+  width: 15px;
+  height: 15px;
+}
+.settings-Button:hover {
+  background-color: var(--NewColor);
+}
+#SettingPage {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: var(--Background);
+}
+
+/* Color Stuff */
+#Color {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border: 5px solid var(--Text);
+  align-items: center;
+  height: 80%;
+  width: 25%;
+  background: var(--Background2);
+}
+#ColorSetting {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  top: 0%;
+  left: 0%;
+  border: 5px solid var(--Border);
+  align-items: stretch;
+  height: 80%;
+  width: 90%;
+  background: var(--Background2);
+}
+.ColorTitle {
+  font-size: 34px;
+  position: relative;
+  left: 0%;
+  top: 0%;
+  margin: 0;
+  color: var(--Text);
+  border: 5px solid var(--Border);
+  z-index: 1000;
+}
+.color-selector {
+  position: initial;
+  padding: 5%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  align-items: baseline;
+  z-index: 100;
+}
+.border-color-selector,
+.Background-color-selector,
+.Background2-color-selector,
+.text-color-selector {
+  position: absolute;
+  padding: 5%;
+  display: flex;
+  top: 10%;
+  left: 50%;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  align-items: right;
+  z-index: 100;
+}
+input[type="color"] {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.selected-color {
+  width: 30px;
+  height: 30px;
+  margin-top: 5px;
+  border: 10px solid #ff0000;
+}
+
+/* Audio Stuff */
+#Audio {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border: 5px solid var(--Border);
+  align-items: center;
+  height: 80%;
+  width: 25%;
+  background: var(--Background2);
+}
+#AudioSetting {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  top: 0%;
+  left: 120%;
+  border: 5px solid var(--Border);
+  align-items: stretch;
+  height: 80%;
+  width: 90%;
+  background: var(--Background2);
+}
+.AudioTitle {
+  position: relative;
+  margin: 0;
+  color: var(--Text);
+}
+.AudioTitle {
+  font-size: 34px;
+  position: relative;
+  left: 120%;
+  top: 15%;
+  margin: 0;
+  color: var(--Text);
+  border: 5px solid var(--Border);
+  z-index: 1000;
+}
+
+/* Visual Stuff */
+#Visual {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border: 5px solid var(--Border);
+  align-items: center;
+  height: 80%;
+  width: 25%;
+  background: var(--Background2);
+}
+.VisualTitle {
+  font-size: 34px;
+  position: relative;
+  right: 120%;
+  top: 15%;
+  margin: 0;
+  color: var(--Text);
+  border: 5px solid var(--Border);
+  z-index: 1000;
+}
+#VisualSetting {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  top: 0%;
+  right: 120%;
+  border: 5px solid var(--Border);
+  align-items: stretch;
+  height: 80%;
+  width: 90%;
+  background: var(--Background2);
+}
+
+/* Slider Stuff */
+.slider-container {
+  margin-top: 10px;
+}
+.slider-container label {
+  display: block;
+  margin-bottom: 5px;
+}
+.slider-container input[type="range"] {
+  width: 80%;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: var(--Border);
+  height: 15px;
+  border-radius: 50px;
+  outline: none;
+}
+.slider-container input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8px;
+  background-color: var(--Background);
+  border-radius: 4px;
+}
+.slider-container input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  background-color: var(--Text);
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -5px;
+}
+#slider-value {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 14px;
+  color: var(--Text); /* Add this line to set the font color to white */
+  position: relative;
+}
+
+/* Checkbox Stuff */
+.checkbox-container {
+  margin-top: 10%;
+}
+.checkbox-container label {
+  display: block;
+  margin-left: 5%;
+}
+.checkbox-container input[type="checkbox"] {
+  margin-right: 5%;
+}
+
+
+
+
+/*  
+#MainDashboardPage {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: var(--Background);
+}
+#MainNameHeader {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border: 5px solid var(--Text);
+  align-items: center;
+  height: 10%;
+  width: 10%;
+  background: var(--Background2);
+}
+
+#MainNameText {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-grow: 1;
+  margin: 0;
+  padding: 5px;
+}
+*/

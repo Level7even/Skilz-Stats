@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../Pages/Settings/Settings.css" />
+  <script src="../../Pages/Settings/Settings.js" defer=""></script>
+  <title>Settings</title>
+</head>
+
+<body>
+  <header id="SettingPage">
+
+    <header id="Color">
+      <div class="ColorTitle">Color</div>
+      <header id="ColorSetting">
+
+        <div class="color-selector">
+          <div class="color-text">Select Border Color:</div>
+          <input class="Border-Color" type="color" id="border-color-picker">
+          <li class="settings-Button" id="apply">Apply</li>
+        </div>
+
+        <div class="color-selector">
+          <div class="color-text">Select Text Color:</div>
+          <input class="Text-Color" type="color" id="border-color-picker">
+        </div>
+
+        <div class="color-selector">
+          <div class="color-text">Select Background Color:</div>
+          <input class="Background-Color" type="color" id="background-color-picker">
+        </div>
+
+        <div class="color-selector">
+          <div class="color-text">Select Background2 Color:</div>
+          <input class="Background2-Color" type="color" id="background2-color-picker">
+        </div>
+
+      </header>
+    </header>
+
+    <header id="Audio">
+      <div class="AudioTitle">Audio</div>
+      <header id="AudioSetting">
+
+        <div class="slider-container">
+          <label for="slider">Main:</label>
+          <input type="range" id="slider" min="0" max="100" value="50" step="1">
+          <span id="slider-value">0</span>
+        </div>
+
+        <div class="slider-container">
+          <label for="slider">SFX:</label>
+          <input type="range" id="slider" min="0" max="100" value="50" step="1">
+          <span id="slider-value">0</span>
+        </div>
+
+      </header>
+    </header>
+
+    <header id="Visual">
+      <div class="VisualTitle">Visual</div>
+      <header id="VisualSetting">
+
+        <div class="checkbox-container">
+          <label for="smooth-page-checkbox">Smooth Page:</label>
+          <input type="checkbox" id="smooth-page-checkbox">
+        </div>
+    
+      </header>
+    </header>
+
+
+  </header>
+  <script src="Settings.js"></script>
+  <script src="Main.js" defer=""></script>
+</body>
+
+</html>
